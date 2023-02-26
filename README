@@ -1,0 +1,7 @@
+
+插件架构风格的消息处理系统，
+
+pipeline 是消息处理的管道，其中包含了 input、filter 和 output 三个插件。
+
+我们需要实现根据配置来创建 pipeline ，加载插件过程的实现非常适合使用工厂模式，其中 input、filter 和 output 三类插件的创建使用抽象工厂模式
+
